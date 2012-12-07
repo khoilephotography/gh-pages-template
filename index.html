@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
 	<meta charset='utf-8' />
@@ -9,4 +9,174 @@
 <body>
   <div id="helloworld">Hi Hi, I'm so high!</div>
 </body>
-</html>
+</html>-->
+<html xmlns:fb="http://www.facebook.com/2008/fbml" style=""><head>
+	<title>Fotorama. A simple, stunning, powerful Javascript gallery</title>
+
+	<script id="LR1" type="text/javascript" async="" src="http://platform.twitter.com/js/vendor/twt/dist/twt.ru.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.WKtF5IvBxOM.O/m=plusone/am=IQ/rt=j/d=1/rs=AItRSTPMkPgxDFmMmuSfA_lqPc8Ik3CrTw/cb=gapi.loaded_0" async=""></script><script>
+		fotoramaDefaults = {
+			width: '100%',
+			height: 'auto',
+      aspectRatio: 700/467,
+      minHeight: 400,
+      fitToWindowHeight: true,
+      fitToWindowHeightMargin: 0,
+      margin: 0,
+      //thumbsCentered: false,
+      //navBackground: ыв'#fff',
+      //background: '#fff',
+			shadows: false,
+			cropToFit: true
+		}
+	</script>
+	<link rel="stylesheet" href="/_css/css.min.css">
+<link rel="stylesheet" href="/fotorama/fotorama.css">
+
+<script type="text/javascript" src="/_js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/fotorama/fotorama.js"></script><style type="text/css"></style>
+
+<script type="text/javascript" src="/_js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/_js/jquery.scrollTo-1.4.2-min.customized.js"></script>
+<script type="text/javascript" src="/_js/js.js"></script>
+
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=760">
+
+<!--[if lt IE 7]>
+<script src="/_js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  ﻿DD_belatedPNG.fix('.pngfix');
+</script>
+<![endif]-->
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js" gapi_processed="true"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21114316-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link rel="stylesheet" type="text/css" href="http://platform.twitter.com/embed/embed.ff268cb1fe83dd17c1ba606826968a3a.css"></head>
+<body class="en" data-twttr-rendered="true">
+
+<div id="ru">Фоторама. Простая, шикарная, мощная галерея для сайтов</div>
+
+<div class="l-root l-root_index" style="visibility: visible;">
+
+	
+<div class="b-logo b-logo_3 en" style="-webkit-user-select: none;">
+	<div class="ramka">
+		<i class="img pngfix"></i>
+		<i class="i-0"></i>
+		<i class="i-1"></i><i class="i-2"></i><i class="i-3"></i><i class="i-4"></i>
+	</div>
+
+	<img class="fo pngfix" src="/_i/b-logo/fo_white.png" width="48" height="25">
+	<img class="to pngfix" src="/_i/b-logo/to_white.png" width="41" height="25">
+	<img class="ra pngfix" src="/_i/b-logo/ra_white.png" width="42" height="25">
+	<img class="ma pngfix" src="/_i/b-logo/ma_white.png" width="45" height="25">
+
+	<!--<div class="ie6">
+		<img src="/_i/b-logo/logo_ie6_white.png" alt="Fotorama" width="194" height="62" />
+	</div>-->
+</div>
+
+<div class="b-logo b-logo_ru b-logo_3 ru" style="-webkit-user-select: none;">
+	<div class="ramka">
+    <i class="img pngfix"></i>
+		<i class="i-0"></i>
+		<i class="i-1"></i><i class="i-2"></i><i class="i-3"></i><i class="i-4"></i>
+	</div>
+
+	<img class="fo pngfix" src="/_i/b-logo/ru/fo_white.png" width="48" height="25">
+	<img class="to pngfix" src="/_i/b-logo/ru/to_white.png" width="41" height="25">
+	<img class="ra pngfix" src="/_i/b-logo/ru/ra_white.png" width="37" height="25">
+	<img class="ma pngfix" src="/_i/b-logo/ru/ma_white.png" width="45" height="25">
+
+	<!--<div class="ie6">
+		<img src="/_i/b-logo/ru/logo_ie6_white.png" alt="Фоторама" width="194" height="62" />
+	</div>-->
+</div>
+
+
+	<ul class="b-lang" id="lang">
+		<li><a href="#en" class="en">EN</a></li>
+		<li><a href="#ru" class="ru">RU</a></li>
+	</ul>
+
+	<div class="b-sidebar" id="sidebar">
+		<ul class="b-menu en">
+      <li><a href="/license/">License</a></li>
+			<li><a href="/set-up/">Download and Set Up</a></li>
+			<li><a href="/customize/">Customize</a></li>
+			<li><a href="/use/">Use</a></li>
+			<li><a href="/plug-in/">Plug in</a></li>
+			<li><a href="/get-help/">Get help</a></li>
+		</ul>
+
+		<ul class="b-menu ru">
+      <li><a href="/license/">Лицензия</a></li>
+			<li><a href="/set-up/">Загрузка и подключение</a></li>
+			<li><a href="/customize/">Настройка</a></li>
+			<li><a href="/use/">Примеры</a></li>
+			<li><a href="/plug-in/">Плагины</a></li>
+			<li><a href="/get-help/">Поддержка</a></li>
+		</ul>
+			</div>
+
+	<div class="l-content">
+		<div class="b-section">
+    <div class="b-fotorama">
+      <div class="say-hi" id="say-hi-link" style="opacity: 1;">
+        <p class="en"> <a href="#say-hi" class="js-anchor-href">Say Hi to Fotorama</a></p>
+        <p class="ru"><a href="#say-hi" class="js-anchor-href" й="">Встречайте Фотораму</a></p>
+      </div>
+
+
+			
+					<div class="fotorama fotorama_horizontal fotorama_csstransitions" style="min-width: 0px; overflow: hidden;"><div class="fotorama__wrap fotorama__wrap_style_touch fotorama__wrap_mouseout" style="width: 1265px; height: 402px;"><div class="fotorama__noise"></div><div class="fotorama__shaft" style="-webkit-transition: 0ms; -webkit-transform: translate(0px, 0); width: 32890px; height: 402px;"><div class="fotorama__state" style="left: 632.5px; opacity: 0;"><svg viewBox="0 0 32 32"><g fill="none" stroke="#808080" stroke-width="2"><circle cx="16" cy="16" r="13"></circle><line x1="7" y1="7" x2="25" y2="25"></line></g></svg></div><div class="fotorama__frame" style="visibility: visible; width: 1265px; height: 402px; left: 0px;"><img style="visibility: visible; width: 1265px; height: 844px; top: -221px; left: 0px;" src="img/okonechnikov/full/20090807-_DSC6313.jpg" class="fotorama__img" width="1265" height="844"></div><div class="fotorama__frame" style="visibility: visible; width: 1265px; height: 402px; left: 1265px;"><img style="visibility: visible; width: 1265px; height: 844px; top: -221px; left: 0px;" src="img/okonechnikov/full/20110828-_DSC4939.jpg" class="fotorama__img" width="1265" height="844"></div><div class="fotorama__frame" style="visibility: visible; width: 1265px; height: 402px; left: 2530px;"><img style="visibility: visible; width: 1265px; height: 844px; top: -221px; left: 0px;" src="img/okonechnikov/full/20110918-_DSC5182.jpg" class="fotorama__img" width="1265" height="844"></div><div class="fotorama__frame" style="visibility: visible; width: 1265px; height: 402px; left: 3795px;"><img style="visibility: visible; width: 1265px; height: 951px; top: -274px; left: 0px;" src="img/okonechnikov/full/20110918-_DSC5271.jpg" class="fotorama__img" width="1265" height="951"></div></div><i class="fotorama__arr fotorama__arr_prev fotorama__arr_disabled fotorama__arr_hover" style="-webkit-transition: 333ms;">◀</i><i class="fotorama__arr fotorama__arr_next" style="-webkit-transition: 333ms;">▶</i></div><div class="fotorama__thumbs fotorama__thumbs_previews" style="visibility: visible; height: 56px; width: 1265px;"><div class="fotorama__thumbs-shaft" style="-webkit-transition: 0ms; -webkit-transform: translate(4px, 0);"><i class="fotorama__thumb-border" style="height: 44px; top: 4px; border-width: 2px; display: inline; -webkit-transition: 0ms; -webkit-transform: translate(0px, 0); width: 68px;"></i><div class="fotorama__thumb fotorama__thumb_selected" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 64px;"><canvas class="fotorama__thumb__img" width="64" height="48" style="width: 64px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 75px;"><canvas class="fotorama__thumb__img" width="75" height="48" style="width: 75px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 64px;"><canvas class="fotorama__thumb__img" width="64" height="48" style="width: 64px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 66px;"><canvas class="fotorama__thumb__img" width="66" height="48" style="width: 66px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 85px;"><canvas class="fotorama__thumb__img" width="85" height="48" style="width: 85px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div><div class="fotorama__thumb" style="height: 48px; margin: 4px; width: 72px;"><canvas class="fotorama__thumb__img" width="72" height="48" style="width: 72px; height: 48px; visibility: visible;"></canvas></div></div></div></div>
+
+					<div class="author en">
+						<span class="inner"><a href="http://okonet.ru/">Andrey Okonechnikov</a></span>
+					</div>
+
+					<div class="author ru">
+						<span class="inner"><a href="http://okonet.ru/">Андрей Оконечников</a></span>
+					</div>
+            </div>
+
+    <div class="l-footer">
+		<div class="b-footer">
+			<div class="b-addthis">
+	<div class="block">
+		<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1354761327.html#_=1354875504543&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Ffotoramajs.com%2F&amp;size=m&amp;text=Fotorama.%20A%20simple%2C%20stunning%2C%20powerful%20Javascript%20gallery&amp;url=http%3A%2F%2Ffotoramajs.com%2F" class="twitter-share-button twitter-count-horizontal" style="width: 108px; height: 20px;" title="Twitter Tweet Button" data-twttr-rendered="true"></iframe><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+	</div>
+
+	<div class="block">
+		<div style="height: 20px; width: 90px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1354875504556" name="I0_1354875504556" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=en-US&amp;origin=http%3A%2F%2Ffotoramajs.com&amp;url=http%3A%2F%2Ffotoramajs.com%2F&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.WKtF5IvBxOM.O%2Fm%3D__features__%2Fam%3DIQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTPMkPgxDFmMmuSfA_lqPc8Ik3CrTw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled&amp;id=I0_1354875504556&amp;parent=http%3A%2F%2Ffotoramajs.com" allowtransparency="true" title="+1"></iframe></div>
+	</div>
+</div>
+
+<!--<div class="b-addthis" style="margin-top: -20px;">
+	<div class="block">
+		<a href="https://twitter.com/fotoramajs" class="twitter-follow-button" data-show-count="false">Follow @fotoramajs</a>
+		<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+	</div>
+</div>-->
+
+<p class="copyright en">© Artem Polikarpov, 2011—2012 &nbsp;·&nbsp; Drop me a&nbsp;line: <a href="mailto:fotoramajs@gmail.com">fotoramajs@gmail.com</a><!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <nobr>Co-author</nobr> of the logo — <a href="http://talala.ru/">Denis Talalá</a>--></p>
+<p class="copyright ru">© <a href="http://artpolikarpov.ru/">Артём Поликарпов</a>, 2011—2012 &nbsp;·&nbsp; Пишите: <a href="mailto:fotoramajs@gmail.com">fotoramajs@gmail.com</a><!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Соавтор логотипа — <a href="http://talala.ru/">Денис Талалá</a>--></p>		</div>
+    </div>
+
+</div>
+
+
+<img src="//p.twitter.com/e.gif?status_id=273521885084528640&amp;tweet_ids=273521885084528640&amp;context=subject&amp;twttr_variant=1.0&amp;twttr_referrer=http%3A%2F%2Ffotoramajs.com%2F" alt="" style="position: absolute; height: 1px; width: 1px; top: -9999px; left: -9999px;"></body></html>
