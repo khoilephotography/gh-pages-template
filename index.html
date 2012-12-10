@@ -119,6 +119,9 @@ $('.fotorama').append('<img src='+images[i]+'>');
 }
 </script>
 <script>
+ $("div.b-sidebar a").bind("click", function(event) {
+       event.preventDefault();
+ }
 jQuery( 'div.b-sidebar a')
     .click(function() {
     	do_the_click( this.href );
