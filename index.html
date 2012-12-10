@@ -81,7 +81,11 @@
 	<ul class="b-lang" id="lang">
 		<li><a href="#en" class="en">EN</a></li>
 	</ul>
-
+	<script>
+$('a').bind('click', function(e) {           
+  var url = $(this).attr('href');
+  e.preventDefault(); // stop the browser from following the link
+});</script>
 	<div class="b-sidebar" id="sidebar">
 		<ul class="b-menu en">
       <li><a href="/license/">License</a></li>
@@ -119,9 +123,6 @@ $('.fotorama').append('<img src='+images[i]+'>');
 }
 </script>
 <script>
- $("div.b-sidebar a").bind("click", function(event) {
-       event.preventDefault();
- }
 jQuery( 'div.b-sidebar a')
     .click(function() {
     	do_the_click( this.href );
