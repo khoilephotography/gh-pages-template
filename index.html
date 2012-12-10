@@ -34,7 +34,7 @@
 
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 
-
+<script type="text/javascript" src="fotorama.js"></script>
 <script type="text/javascript" src="jquery.cookie.js"></script>
 <script type="text/javascript" src="jquery.scrollTo-1.4.2-min.customized.js"></script>
 <script type="text/javascript" src="js.js"></script>
@@ -118,7 +118,19 @@ for(int i=0;i<images.length();i++)
 $('.fotorama').append('<img src='+images[i]+'>');
 }
 </script>
-<script type="text/javascript" src="fotorama.js"></script>
+<script>
+jQuery( 'div.b-sidebar a')
+    .click(function() {
+    	do_the_click( this.href );
+    	return false;
+    });
+
+// play the funky music white boy
+function do_the_click( url )
+{
+    alert( url );
+}
+</script>
 
 					<div class="author en">
 						<span class="inner"><a href="http://okonet.ru/">Andrey Okonechnikov</a></span>
