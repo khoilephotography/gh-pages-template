@@ -102,5 +102,14 @@
 </div>
 </div>
 </div>
-
+<script>
+$(function(){
+$( 'div.b-sidebar a')
+    .click(function() {
+        $("#fotorama").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        return false;
+    });
+});
+</script>​
 <img src="//p.twitter.com/e.gif?status_id=273521885084528640&amp;tweet_ids=273521885084528640&amp;context=subject&amp;twttr_variant=1.0&amp;twttr_referrer=http%3A%2F%2Ffotoramajs.com%2F" alt="" style="position: absolute; height: 1px; width: 1px; top: -9999px; left: -9999px;"></body></html>
