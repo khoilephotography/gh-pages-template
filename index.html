@@ -3,7 +3,7 @@
 <html xmlns:fb="http://www.facebook.com/2008/fbml" style=""><head>
 	<title>Fotorama. A simple, stunning, powerful Javascript gallery</title>
 
-<!--<script>
+<script>
 		fotoramaDefaults = {
 			width: '100%',
 			height: 'auto',
@@ -18,16 +18,16 @@
 			shadows: false,
 			cropToFit: true
 		}
-	</script>-->
-	<!--<link rel="stylesheet" href="css.min.css">
-<link rel="stylesheet" href="fotorama.css">-->
+	</script>
+<link rel="stylesheet" href="css.min.css">
+<link rel="stylesheet" href="fotorama.css">
 
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 
-<!--<script type="text/javascript" src="fotorama.js"></script>
+<script type="text/javascript" src="fotorama.js"></script>
 <script type="text/javascript" src="jquery.cookie.js"></script>
 <script type="text/javascript" src="jquery.scrollTo-1.4.2-min.customized.js"></script>
-<script type="text/javascript" src="js.js"></script>-->
+<script type="text/javascript" src="js.js"></script>
 
 <link rel="shortcut icon" href="/favicon.ico">
 <meta charset='utf-8' />
@@ -104,7 +104,35 @@
 
 <script>
 $(function(){
+$( 'div.b-sidebar a.download')
+    .click(function() {
+        $("#fotorama").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        return false;
+    });
+    
 $( 'div.b-sidebar a.customize')
+    .click(function() {
+        $("#fotorama").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        return false;
+    });
+    
+$( 'div.b-sidebar a.use')
+    .click(function() {
+        $("#fotorama").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        return false;
+    });
+    
+$( 'div.b-sidebar a.plugin')
+    .click(function() {
+        $("#fotorama").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
+        return false;
+    });
+    
+$( 'div.b-sidebar a.gethelp')
     .click(function() {
         $("#fotorama").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
         $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg"/>');
