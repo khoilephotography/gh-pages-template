@@ -59,7 +59,7 @@
 
 	<div class="b-sidebar" id="sidebar">
 		<ul class="b-menu en">
-			<li><a href="/download.html" class="download">Download and Set Up</a></li>
+			<li><a href="" class="download">Download and Set Up</a></li>
 			<li><a href="" class="customize">Customize</a></li>
 			<li><a href="" class="use">Use</a></li>
 			<li><a href="" class="plugin">Plug in</a></li>
@@ -106,17 +106,17 @@
 $(function(){
 $( 'div.b-sidebar a.downloa')
     .click(function() {
-        $("#fotoram").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotoram").fotorama();
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $("#fotorama").fotorama();
         return false;
     });
     
 $( 'div.b-sidebar a.customize')
     .click(function() {
-        $("#fotoram").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotoram").fotorama();
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $("#fotorama").fotorama();
         return false;
     });
     
@@ -130,17 +130,17 @@ $( 'div.b-sidebar a.use')
     
 $( 'div.b-sidebar a.plugin')
     .click(function() {
-        $("#fotoram").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $(".fotoram").fotorama();
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $(".fotorama").fotorama();
         return false;
     });
     
 $( 'div.b-sidebar a.gethelp')
     .click(function() {
-        $("#fotoram").empty().append('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotoram").fotorama();
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $("#fotorama").fotorama();
         return false;
     });
 });
