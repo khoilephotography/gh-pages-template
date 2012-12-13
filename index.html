@@ -122,7 +122,7 @@ $( 'div.b-sidebar a.customize')
     
 $( 'div.b-sidebar a.use')
     .click(function() {
-        //$("#fotorama").empty();
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
         $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
         $("#fotorama").fotorama();
         return false;
