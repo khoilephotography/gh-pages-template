@@ -1,12 +1,187 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset='utf-8' />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" media="all" href="style.css">
-	<title>gh-pages template</title>
+
+<html xmlns:fb="http://www.facebook.com/2008/fbml" style=""><head>
+	<title>Fotorama. A simple, stunning, powerful Javascript gallery</title>
+
+<script>
+		fotoramaDefaults = {
+			width: '100%',
+			height: 'auto',
+      aspectRatio: 700/467,
+      minHeight: 400,
+      fitToWindowHeight: true,
+      fitToWindowHeightMargin: 0,
+      margin: 0,
+      //thumbsCentered: false,
+      //navBackground: ыв'#fff',
+      //background: '#fff',
+			shadows: false,
+			cropToFit: true
+		}
+	</script>
+<link rel="stylesheet" href="css.min.css">
+<link rel="stylesheet" href="fotorama.css">
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="fotorama.js"></script>
+<script type="text/javascript" src="jquery.cookie.js"></script>
+<script type="text/javascript" src="jquery.scrollTo-1.4.2-min.customized.js"></script>
+<script type="text/javascript" src="js.js"></script>
+
+<link rel="shortcut icon" href="/favicon.ico">
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--[if lt IE 7]>
+<script src="/_js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  ﻿DD_belatedPNG.fix('.pngfix');
+</script>
+<![endif]-->
+<style type="text/css">
+        #menu {
+            background-color: #cccccc;
+            color: black;
+            text-decoration: none;
+        }
+
+        #menu ul {
+            display: none;
+        }
+
+        #menu:hover {
+            border: none;
+        }
+
+        #menu:hover ul {
+            background-color: #cccccc;
+            display: block;
+            margin: 0;
+            margin-left: 10px;
+            padding: 0;
+            list-style-type: none;
+        }
+    </style>
 </head>
-<body>
-  <div id="hi">High, high, I'm so high!</div>
-</body>
-</html>
+<body class="en" data-twttr-rendered="true">
+
+<div class="l-root l-root_index" style="visibility: visible;">
+
+
+<div class="b-logo b-logo_3 en" style="-webkit-user-select: none;">
+	<div class="ramka">
+		<i class="img pngfix"></i>
+		<i class="i-0"></i>
+		<i class="i-1"></i><i class="i-2"></i><i class="i-3"></i><i class="i-4"></i>
+	</div>
+</div>
+	<ul class="b-lang" id="lang">
+		<li><a href="#en" class="en">EN</a></li>
+	</ul>
+
+	<div class="b-sidebar" id="sidebar">
+		<ul class="b-menu en">
+			<li><a href="" class="download">Download and Set Up</a></li>
+			<li><a href="" class="customize">Customize</a></li>
+			<li><a href="" class="use">Use</a></li>
+			<li><a href="" class="plugin">Plug in</a></li>
+			<li><a href="" class="gethelp">Get help</a></li>
+			<li><a href="#" id="menu">Menu
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a href="http://www.google.com">Google</a></li>
+                            <li><a href="http://www.yahoo.com">Yahoo</a></li>
+                            <li><a href="http://www.stackoverflow.com">Stack Overflow</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </a></li>
+		</ul>
+			</div>
+
+	<div class="l-content">
+		<div class="b-section">
+    <div class="b-fotorama">
+      <div class="say-hi" id="say-hi-link" style="opacity: 1;">
+        <p class="en"> <a href="#say-hi" class="js-anchor-href">Say Hi to Fotorama</a></p>
+      </div>
+
+	<div class="fotorama" id="fotorama">
+	      <img src="http://farm5.static.flickr.com/4130/4967739638_edfdb0a52b_b.jpg">
+	      <img src="http://farm5.static.flickr.com/4130/4967739638_edfdb0a52b_b.jpg">
+    	</div>
+    	
+
+
+					<div class="author en">
+						<span class="inner"><a href="http://okonet.ru/">Andrey Okonechnikov</a></span>
+					</div>
+            </div>
+
+    <div class="l-footer">
+		<div class="b-footer">
+			<div class="b-addthis">
+
+
+
+</div>
+
+
+<p class="copyright en">© Artem Polikarpov, 2011—2012 &nbsp;·&nbsp; Drop me a&nbsp;line: <a href="mailto:fotoramajs@gmail.com">fotoramajs@gmail.com</a><!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <nobr>Co-author</nobr> of the logo — <a href="http://talala.ru/">Denis Talalá</a>--></p>
+</div>
+    </div>
+
+</div>
+</div>
+</div>
+
+<script>
+$(function(){
+$( 'div.b-sidebar a.download')
+    .click(function() {
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $("#fotorama").fotorama();
+        return false;
+    });
+    
+$( 'div.b-sidebar a.customize')
+    .click(function() {
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $("#fotorama").fotorama();
+        return false;
+    });
+    
+$( 'div.b-sidebar a.use')
+    .click(function() {
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4130/4967739638_edfdb0a52b_b.jpg">');
+        $("#fotorama").fotorama();
+        return false;
+    });
+    
+$( 'div.b-sidebar a.plugin')
+    .click(function() {
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $(".fotorama").fotorama();
+        return false;
+    });
+    
+$( 'div.b-sidebar a.gethelp')
+    .click(function() {
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
+        $("#fotorama").fotorama();
+        return false;
+    });
+});
+</script>
+
+<img src="//p.twitter.com/e.gif?status_id=273521885084528640&amp;tweet_ids=273521885084528640&amp;context=subject&amp;twttr_variant=1.0&amp;twttr_referrer=http%3A%2F%2Ffotoramajs.com%2F" alt="" style="position: absolute; height: 1px; width: 1px; top: -9999px; left: -9999px;"></body></html>
