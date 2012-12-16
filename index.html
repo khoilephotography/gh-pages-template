@@ -52,9 +52,6 @@
 		<i class="i-1"></i><i class="i-2"></i><i class="i-3"></i><i class="i-4"></i>
 	</div>
 </div>
-	<ul class="b-lang" id="lang">
-		<li><a href="#en" class="en">EN</a></li>
-	</ul>
 
 	<div class="b-sidebar" id="sidebar">
 		<ul class="b-menu en">
@@ -82,9 +79,6 @@
 	<div class="l-content">
 		<div class="b-section">
     <div class="b-fotorama">
-      <div class="say-hi" id="say-hi-link" style="opacity: 1;">
-        <p class="en"> <a href="#say-hi" class="js-anchor-href">Say Hi to Fotorama</a></p>
-      </div>
 
 	<div class="fotorama" id="fotorama">
 	      <img src="http://farm5.static.flickr.com/4130/4967739638_edfdb0a52b_b.jpg">
@@ -92,16 +86,6 @@
     	</div>
     	
             </div>
-
-    <div class="l-footer">
-		<div class="b-footer">
-			<div class="b-addthis">
-
-
-
-</div>
-</div>
-    </div>
 
 </div>
 </div>
@@ -147,6 +131,11 @@ $( 'div.b-sidebar a.gethelp')
         $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
         $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
         $("#fotorama").fotorama();
+        return false;
+    });
+});
+$( 'div.b-sidebar a.submenu')
+    .click(function() {
         return false;
     });
 });
