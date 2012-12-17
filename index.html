@@ -92,6 +92,7 @@ $( 'div.b-sidebar a.Fashion')
     .click(function() {
         $(".b-fotoram").empty().prepend('<div class="fotoram" id="fotoram"></div>');
         $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8490/8269345441_f4044ca420_b.jpg">');
+        $("#fotoram").prepend('<img src="<a href="http://www.flickr.com/photos/binbinbibo/8269454719/" title="khoilephotography.com by KhoiLe | photography, on Flickr"><img src="http://farm9.staticflickr.com/8217/8269454719_c00cc5998e_b.jpg" width="688" height="1024" alt="khoilephotography.com"></a>">');
         $("#fotoram").fotorama();
         return false;
     });
