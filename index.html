@@ -58,8 +58,8 @@
 			<li><a href="" class="Fashion">Fashion</a></li>
 			<li><a href="" class="Wedding">Wedding</a></li>
 			<li><a href="" class="Events">Events</a></li>
-			<li><a href="" class="Beauty & Portrait">Beauty & Portrait</a></li>
-			<li><a href="" class="About Me">About Me</a></li>
+			<li><a href="" class="Beauty">Beauty & Portrait</a></li>
+			<li><a href="" class="Aboutme">About Me</a></li>
 			<li><a class="submenu">Menu
 		            <table border="0" cellpadding="0" cellspacing="0">
 		                <tr>
@@ -90,7 +90,15 @@
 
 <script>
 $(function(){
-$( 'div.b-sidebar a.download')
+$( 'div.b-sidebar a.Fashion')
+    .click(function() {
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8490/8269345441_b6bc8dd85e_o.jpg">');
+        $("#fotorama").fotorama();
+        return false;
+    });
+    
+$( 'div.b-sidebar a.Wedding')
     .click(function() {
         $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
         $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
@@ -98,15 +106,7 @@ $( 'div.b-sidebar a.download')
         return false;
     });
     
-$( 'div.b-sidebar a.customize')
-    .click(function() {
-        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
-        $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
-        $("#fotorama").fotorama();
-        return false;
-    });
-    
-$( 'div.b-sidebar a.use')
+$( 'div.b-sidebar a.Events')
     .click(function() {
         $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
         $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
@@ -115,7 +115,7 @@ $( 'div.b-sidebar a.use')
         return false;
     });
     
-$( 'div.b-sidebar a.plugin')
+$( 'div.b-sidebar a.Beauty')
     .click(function() {
         $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
         $("#fotorama").prepend('<img src="http://farm5.static.flickr.com/4148/4967746406_427d761e2e_b.jpg">');
