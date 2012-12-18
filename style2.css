@@ -1,0 +1,157 @@
+/* © 2012 Artem Sapegin http://sapegin.me */
+
+/* Global reset */
+* {
+  padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+html {
+  background:#111 !important;
+}
+
+body.fullscreen {
+	position:relative;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#111 !important;
+	color:#eee;
+  text-shadow:0 0 10px rgba(0,0,0,.75);
+	font-size:16px;
+	}
+
+.header a,
+.header a:link,
+.header a:visited {
+	color:#eee;
+	}
+.header a:hover,
+.header a:active,
+.header a:focus {
+	color:#fff;
+	}
+
+.fullscreen .header,
+.fullscreen .header *,
+#download,
+#download * {
+	visibility:visible;
+	z-index:10;
+	}
+.fullscreen .fotorama_fullscreen {
+	z-index:1 !important;
+	}
+
+
+/* Header */
+.fullscreen .fotorama-header {
+	position:absolute;
+	top:0;
+	left:8px;
+	width:100%;
+	z-index:200;
+	}
+
+.fullscreen .logo {
+	position:absolute;
+	top:10px;
+	left:auto;
+	width:auto;
+  right: 50px;
+	text-align:center;
+	font-size:32px;
+	font-weight:normal;
+	color:#fff;
+	}
+
+/* Descriptions */
+.fotorama .caption {
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	padding:6px 8px;
+	border-radius:4px;
+	color:#fff;
+	text-shadow:0 0 1px #000;
+	background:#000;
+	background:hsla(0,0%,0%,.7);
+	}
+	.caption__title {
+		display:block;
+		margin-bottom:6px;
+		font-size:13px;
+		}
+	.caption__location {
+		display:block;
+		margin-bottom:4px;
+		font-size:11px;
+		}
+	.caption__info {
+		display:block;
+		font-size:11px;
+		color:#ccc;
+		color:hsla(0,0%,100%,.6);
+		}
+	.caption__credit {
+		font-size:11px;
+		color:#ccc;
+		color:hsla(0,0%,100%,.6);
+		}
+		.caption__credit a,
+		.caption__credit a:link,
+		.caption__credit a:visited {
+			color:#ccc;
+			color:hsla(0,0%,100%,.6);
+			}
+		.caption__credit a:hover,
+		.caption__credit a:active,
+		.caption__credit a:focus {
+			color:#fff;
+			}
+
+/* Download button */
+#download {
+	position:absolute;
+	bottom:10px;
+	right:10px;
+  text-shadow: none;
+	}
+	#download a {
+		display:inline-block;
+		font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:14px;
+		}
+
+@media (max-width:960px) {
+	.fullscreen .logo {
+		font-size:24px;
+    left: auto;
+    right: 30px;
+    width: auto;
+
+	}
+}
+@media (max-width:840px) {
+	.fullscreen .logo {
+		top:13px;
+		font-size:18px;
+    left: auto;
+    right: 20px;
+    width: auto;
+	}
+}
+@media (max-width:760px) {
+	.fullscreen .logo {
+		left:auto;
+		right:10px;
+		width:auto;
+	}
+}
+@media (max-width:640px) {
+	.fullscreen .logo {
+		top:50px;
+		left:0;
+		right:auto;
+		width:100%;
+	}
+}
