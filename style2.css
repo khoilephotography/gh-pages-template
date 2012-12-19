@@ -1,9 +1,6 @@
-/* © 2012 Artem Sapegin http://sapegin.me */
-
-/* Global reset */
 * {
   padding:0;
-	margin:0;
+  margin:0;
 	box-sizing:border-box;
 }
 
@@ -159,6 +156,11 @@ body.fullscreen {
 
 .submenu ul li {
   display: block;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 1px;
+  padding: 0;
+  text-transform: uppercase
 }
 .submenu ul {
 display: none;
@@ -177,6 +179,7 @@ list-style-type: none;
 }
 
 .b-menu {
+  margin-left: 20px;
   font-size: 10px;
   line-height: 13px;
   letter-spacing: 1px;
@@ -191,7 +194,6 @@ list-style-type: none;
 }
 
 .b-menu li a {
-  color: #555;
   margin-top: 1px;
   margin-right: 1px;
   text-decoration: none;
@@ -206,66 +208,16 @@ list-style-type: none;
   *zoom: 1;
   padding: 5px;
   position: relative;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, .85)
+  background-color: transparent
 }
 
 .b-menu li a:hover {
-  color: #008ed6
-}
-
-.b-menu li .active {
-  color: #000;
-  text-decoration: none;
-  margin-top: 0;
-  margin-right: 0
-}
-
-.b-menu li .active, .b-menu li a.active:hover {
-  border: 1px solid;
-  border-color: #00d1ff #00afea #008ed6
-}
-
-.b-menu li a.active {
-  text-decoration: underline
-}
-
-.b-menu li.download {
-  margin-top: 20px;
-  letter-spacing: 0;
-  text-transform: none;
-  font-size: 11px;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *display: inline;
-  *zoom: 1;
-  padding: 5px 5px 7px;
-  margin-left: -5px;
-  background: #ffb;
-  border-top: 1px solid #ff9;
-  position: relative
-}
-
-.b-menu li.download button {
-  padding: 5px;
-  position: relative;
-  *zoom: 1;
-  margin: 0 0 5px
-}
-
-.b-menu li.download input {
-  margin: 0 0 3px
+  color: #fff
 }
 
 .b-menu li {
   display: inline-block;
   vertical-align: top
-}
-
-.b-menu li a {
-  margin-left: 1px
 }
 
 .b-menu li .active {
