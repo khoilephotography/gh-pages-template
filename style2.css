@@ -4,10 +4,9 @@
 	box-sizing:border-box;
 }
 
-html {
-  background:#111 !important;
+body {
+	background-size: 100% auto;
 }
-
 body.fullscreen {
 	position:relative;
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
