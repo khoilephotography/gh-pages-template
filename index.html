@@ -99,7 +99,7 @@ $(function(){
 $( 'div.b-sidebar a.Fashion')
     .click(function() {
         $(".b-fotoram").empty().prepend('<div class="fotoram" id="fotoram"></div>');
-        $("#fotoram").prepend('<img alt="Hello" src="http://farm9.staticflickr.com/8490/8269345441_f4044ca420_b.jpg" width="1024" height="683">');
+        $("#fotoram").prepend('<img alt="Hello" src="<a href="http://www.flickr.com/photos/binbinbibo/8269345441/" title="khoilephotography.com by KhoiLe | photography, on Flickr"><img src="http://farm9.staticflickr.com/8490/8269345441_f4044ca420_b.jpg" width="1024" height="683" alt="khoilephotography.com"></a>">');
         $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8217/8269454719_c00cc5998e.jpg">');
         $("#fotoram").fotorama({caption:'overlay'});
         return false;
