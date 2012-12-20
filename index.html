@@ -33,7 +33,7 @@
 </script>
 <![endif]-->
 </head>
-<body class="en" background=""http://www.flickr.com/photos/binbinbibo/8062123501/" title="Balloons by KhoiLe | photography, on Flickr"><img src="http://farm9.staticflickr.com/8041/8062123501_d4fe20473b_b.jpg" width="1024" height="683" alt="Balloons"">
+<body class="en" >
 
 <!--	<div class="b-sidebar" id="sidebar">
 		<ul class="b-menu en">
@@ -89,6 +89,9 @@
 		</div>
 	</div>
 
+			<div id="bg" style="width:auto;height:auto">
+				<img src="http://farm9.staticflickr.com/8041/8062123501_d4fe20473b_b.jpg">
+			</div>
 			<div class="b-fotoram">		
 				<div class="fotoram" id="fotoram">
 			</div>
@@ -99,8 +102,8 @@ $(function(){
 $( 'div.b-sidebar a.Fashion')
     .click(function() {
         $(".b-fotoram").empty().prepend('<div class="fotoram" id="fotoram"></div>');
-        $("#fotoram").prepend('<img alt="Hello" src=""http://www.flickr.com/photos/binbinbibo/8269345441/" title="khoilephotography.com by KhoiLe | photography, on Flickr"><img src="http://farm9.staticflickr.com/8490/8269345441_b6bc8dd85e_o.jpg" width="5538" height="3692" alt="khoilephotography.com"">');
-        $("#fotoram").prepend('<img src=""http://www.flickr.com/photos/binbinbibo/8269454719/" title="khoilephotography.com by KhoiLe | photography, on Flickr"><img src="http://farm9.staticflickr.com/8217/8269454719_72f3fc42bc_o.jpg" width="3307" height="4921" alt="khoilephotography.com"">');
+        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8490/8269345441_b6bc8dd85e_o.jpg">');
+        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8217/8269454719_72f3fc42bc_o.jpg">');
         $("#fotoram").fotorama({caption:'overlay'});
         return false;
     });
