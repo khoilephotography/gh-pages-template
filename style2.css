@@ -35,7 +35,6 @@ body.fullscreen {
 #download * {
 	visibility:visible;
 	z-index:10;
-	background: rgba(0, 0, 0, .4);
 	}
 .fullscreen .fotorama_fullscreen {
 	z-index:1 !important;
@@ -188,7 +187,8 @@ list-style-type: none;
   line-height: 13px;
   letter-spacing: 1px;
   padding: 0;
-  text-transform: uppercase
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, .4);
 }
 
 .b-menu li {
