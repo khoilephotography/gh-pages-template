@@ -23,11 +23,11 @@ body.fullscreen {
 .header a:visited {
 	color:#eee;
 	}
-.header a:hover,
+/*.header a:hover,
 .header a:active,
 .header a:focus {
 	color:#fff;
-	}
+	}*/
 
 .fullscreen .header,
 .fullscreen .header *,
