@@ -10,13 +10,13 @@ body {
 body.fullscreen {
 	position:relative;
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-	background:#111 !important;
+	/*background:#111 !important;*/
 	color:#eee;
   	text-shadow:0 0 10px rgba(0,0,0,.75);
 	font-size:16px;
 	}
 .header {
-	background: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .4);
 }
 .header a,
 .header a:link,
@@ -35,7 +35,7 @@ body.fullscreen {
 #download * {
 	visibility:visible;
 	z-index:10;
-	background: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .4);
 	}
 .fullscreen .fotorama_fullscreen {
 	z-index:1 !important;
@@ -50,7 +50,7 @@ body.fullscreen {
 	z-index:200;
 	width:100%;
 	height:1%;
-	background: rgba(0, 0, 0, .6);
+	background: rgba(0, 0, 0, .4);
 	}
 
 .fullscreen .logo {
@@ -212,6 +212,7 @@ list-style-type: none;
   *zoom: 1;
   padding: 5px;
   position: relative;
+  
 }
 
 .b-menu li a:hover {
