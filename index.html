@@ -49,6 +49,7 @@
 			<li><a href="" class="Events">Events</a></li>
 			<li><a href="" class="Beauty">Beauty & Portrait</a></li>
 			<li><a href="" class="Landscape">Landscape</a></li>
+			<li><a href="" class="Product">Product</a></li>
 			<!--<li><a href="" class="Aboutme">About Me</a></li>-->
 			<li><a class="submenu">About Me
 		            <table border="0" cellpadding="0" cellspacing="0">
@@ -237,6 +238,28 @@ $( 'div.b-sidebar a.Landscape')
         $(".fotoram").fotorama();
         return false;
     });
+    
+$( 'div.b-sidebar a.Beauty')
+    .click(function() {
+        $(".b-fotoram").empty().prepend('<div class="fotoram" id="fotoram"></div>');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="">');
+        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7225/7296373008_9cbc26920d_b.jpg">');
+        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7213/7242379014_28ca8ddf58_b.jpg">');
+        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7217/7296214202_6de848f749_b.jpg">');
+        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8152/7234725744_0b09f7d030_b.jpg">');
+        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7230/7228183844_fa54eeef61_b.jpg">');
+        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7242/7262761982_cb02cfe76d_b.jpg">');
+        $(".fotoram").fotorama();
+        return false;
+    });    
     
 $( 'div.b-sidebar a.Aboutme')
     .click(function() {
