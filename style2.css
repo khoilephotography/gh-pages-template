@@ -12,7 +12,7 @@ body.fullscreen {
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	background:#111 !important;
 	color:#eee;
-  text-shadow:0 0 10px rgba(0,0,0,.75);
+  	text-shadow:0 0 10px rgba(0,0,0,.75);
 	font-size:16px;
 	}
 .header {
@@ -214,9 +214,9 @@ list-style-type: none;
   background-color: transparent
 }
 
-.b-menu li a:hover {
+/*.b-menu li a:hover {
   color: #fff
-}
+}*/
 
 .b-menu li {
   display: inline-block;
