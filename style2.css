@@ -41,11 +41,12 @@ body.fullscreen {
 
 /* Header */
 .fullscreen .fotorama-header {
-	position:absolute;
+	/*position:absolute;
 	top:0;
 	left:8px;
+	z-index:200;*/
 	width:100%;
-	z-index:200;
+	height:10%;
 	}
 
 .fullscreen .logo {
