@@ -89,8 +89,8 @@ $(function(){
 $( 'div.b-sidebar a.Home')
     .click(function() {
         $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
-        $("#fotorama").prepend('<img src="">');
         $("#fotorama").prepend('<img url="http://farm9.staticflickr.com/8216/8294052933_f2113eb011_o.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6052/6234854437_9a3197491f_b.jpg">');
         $("#fotorama").fotorama({nav:'none',arrows:false});
         return false;
     });
