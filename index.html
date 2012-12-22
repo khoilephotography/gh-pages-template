@@ -5,7 +5,8 @@
 
 <script>
   fotoramaDefaults = {
-    nav: 'thumbs',
+    nav: 'none',
+    arrows:false,
     margin: 0,
     fullscreen:true,
     background:'#000',
@@ -34,7 +35,7 @@
 <![endif]-->
 </head>
 
-<body class="en" style="background-image:url('http://farm9.staticflickr.com/8216/8294052933_f2113eb011_o.jpg');background-repeat:no-repeat;">
+<body class="en" >
 
 	<div class="header">
 		<div class="fotorama-header">
@@ -72,8 +73,9 @@
 		</div>
 	</div>
 
-			<div class="b-fotoram">		
-				<div class="fotoram" id="fotoram">
+			<div class="b-fotorama">		
+				<div class="fotorama" id="fotorama">
+				<img url="http://farm9.staticflickr.com/8216/8294052933_f2113eb011_o.jpg">
 			</div>
 		</div>		
 
@@ -82,16 +84,16 @@ $(function(){
 	    
 $( 'div.b-sidebar a.Home')
     .click(function() {
-        $(".b-fotoram").empty().prepend('<div class="fotoram" id="fotoram"></div>');
-        $("#fotoram").prepend('<img src="">');
-        $("#fotoram").prepend('<img src="">');
-        $("#fotoram").fotorama();
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
+        $("#fotorama").prepend('<img src="">');
+        $("#fotorama").prepend('<img url="http://farm9.staticflickr.com/8216/8294052933_f2113eb011_o.jpg">');
+        $("#fotorama").fotorama({nav:'none',arrows:false});
         return false;
     });
 	
 $( 'div.b-sidebar a.Fashion')
     .click(function() {
-        $(".b-fotoram").empty().prepend('<div class="fotoram" id="fotoram"></div>');
+        $(".b-fotorama").empty().prepend('<div class="fotorama" id="fotorama"></div>');
         $("#fotoram").prepend('<img src="">');
         $("#fotoram").prepend('<img src="">');
         $("#fotoram").prepend('<img src="">');
@@ -105,45 +107,45 @@ $( 'div.b-sidebar a.Fashion')
         $("#fotoram").prepend('<img src="">');
         $("#fotoram").prepend('<img src="">');
         $("#fotoram").prepend('<img src="">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6052/6234854437_9a3197491f_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6216/6231164005_eaeaa191d3_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6043/6248918094_2623016571_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7101/7315532782_284c0979db_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7064/6887736303_50625e5d56_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6035/6353900497_61313decc0_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6229/6344175443_a56b271309_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm3.staticflickr.com/2207/5734293970_d87b2475da_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm3.staticflickr.com/2503/5730641339_9327087069_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm4.staticflickr.com/3504/5722133833_e8dd97da09_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7270/7521879712_15ab1277eb_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7248/7734315924_ae0d800c3f_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8294/7544120622_624a81c7b1_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8013/7528344224_8bee84306f_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7264/7520842808_7c1f511f8a_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6160/6162630311_3f9d40b8f8_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6201/6124105691_a69be2b9c4_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6186/6120685317_d3e1a500b0_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6194/6116723867_bf9894d333_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6012/5968905223_3dcca0f446_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7002/6629700527_979a1e0535_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7149/6610776865_c07c845d1e_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7249/7825370824_1c413fe64c_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8451/8010145287_3c0d4e35ae_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8174/8033257143_ddf7a8d2bb_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8438/8011353126_0aac8341c9_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8174/8057554267_a4880ef520_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8041/8062123501_c7fbe74094_o.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8301/7809995284_e4c14166d1_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8442/7806177962_e0b27377aa_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8216/8294052933_f2113eb011_o.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8490/8269345441_cd1eb8ea90_o.jpg">');
-        $("#fotoram").prepend('<img src="http://farm9.staticflickr.com/8217/8269454719_fe8bd50cc9_o.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7242/7167079599_9c6ecd2f54_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6118/6390264645_c2b601c417_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm8.staticflickr.com/7175/6395514163_90bf6a32e3_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6104/6367476593_686151c555_b.jpg">');
-        $("#fotoram").prepend('<img src="http://farm7.staticflickr.com/6092/6404705075_16b610b6c4_b.jpg">');
-        $("#fotoram").fotorama({caption:'overlay'});
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6052/6234854437_9a3197491f_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6216/6231164005_eaeaa191d3_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6043/6248918094_2623016571_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7101/7315532782_284c0979db_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7064/6887736303_50625e5d56_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6035/6353900497_61313decc0_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6229/6344175443_a56b271309_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm3.staticflickr.com/2207/5734293970_d87b2475da_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm3.staticflickr.com/2503/5730641339_9327087069_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm4.staticflickr.com/3504/5722133833_e8dd97da09_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7270/7521879712_15ab1277eb_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7248/7734315924_ae0d800c3f_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8294/7544120622_624a81c7b1_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8013/7528344224_8bee84306f_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7264/7520842808_7c1f511f8a_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6160/6162630311_3f9d40b8f8_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6201/6124105691_a69be2b9c4_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6186/6120685317_d3e1a500b0_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6194/6116723867_bf9894d333_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6012/5968905223_3dcca0f446_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7002/6629700527_979a1e0535_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7149/6610776865_c07c845d1e_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7249/7825370824_1c413fe64c_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8451/8010145287_3c0d4e35ae_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8174/8033257143_ddf7a8d2bb_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8438/8011353126_0aac8341c9_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8174/8057554267_a4880ef520_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8041/8062123501_c7fbe74094_o.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8301/7809995284_e4c14166d1_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8442/7806177962_e0b27377aa_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8216/8294052933_f2113eb011_o.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8490/8269345441_cd1eb8ea90_o.jpg">');
+        $("#fotorama").prepend('<img src="http://farm9.staticflickr.com/8217/8269454719_fe8bd50cc9_o.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7242/7167079599_9c6ecd2f54_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6118/6390264645_c2b601c417_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7175/6395514163_90bf6a32e3_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6104/6367476593_686151c555_b.jpg">');
+        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6092/6404705075_16b610b6c4_b.jpg">');
+        $("#fotorama").fotorama({nav:'thumbs',arrows:true});
         return false;
     });
     
