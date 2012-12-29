@@ -16,7 +16,10 @@ body.fullscreen {
 	font-size:16px;
 	}
 	
-.fullscreen .modal {visibility: visible !important}
+.fullscreen .modal, 
+.fullscreen .modal-header,
+.fullscreen .modal-body,
+.fullscreen .modal-footer {visibility: visible !important}
 
 .header a,
 .header a:link,
