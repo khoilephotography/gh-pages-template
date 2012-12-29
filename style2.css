@@ -16,7 +16,7 @@ body.fullscreen {
 	font-size:16px;
 	}
 	
-body.modal {visibility: visible !important}
+.fullscreen .modal {visibility: visible !important}
 
 .header a,
 .header a:link,
