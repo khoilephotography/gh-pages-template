@@ -93,7 +93,7 @@
 		
 		<div class="modal hide fade" id="AboutMe">
 			<div class="modal-header">
-				<a class="close" data-dismiss="modal" style="color:white">X</a>
+				<a class="close" data-dismiss="modal" style="color:white;opacity:none">X</a>
 				<h3>Modal header</h3>
 			</div>
 			<div class="modal-body">
@@ -196,6 +196,7 @@
 	        $("#fotorama").prepend('<img src="">');
 	        $("#fotorama").prepend('<img src="">');
 	        $("#fotorama").fotorama({nav:'thumbs',arrows:true,transition:'slide',autoplay:false,click:true});
+	        $(".modal").hide();
 	        return true;
 	    });
 	    
@@ -208,6 +209,7 @@
 	        $("#fotorama").prepend('<img src="">');
 	        $("#fotorama").prepend('<img src="">');
 	        $("#fotorama").fotorama({nav:'thumbs',arrows:true,transition:'slide',autoplay:false,click:true});
+	        $(".modal").hide();
 	        return true;
 	    });
 	    
@@ -241,6 +243,7 @@
 	        $("#fotorama").prepend('<img src="">');
 	        $("#fotorama").prepend('<img src="">');
 	        $("#fotorama").fotorama({nav:'thumbs',arrows:true,transition:'slide',autoplay:false,click:true});
+	        $(".modal").hide();
 	        return true;
 	    });
 	    
@@ -264,6 +267,7 @@
 	        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7135/7718589666_7281bbb92e_o.jpg">');
 	        $("#fotorama").prepend('<img src="">');
 	        $("#fotorama").fotorama({nav:'thumbs',arrows:true,transition:'slide',autoplay:false,click:true});
+	        $(".modal").hide();
 	        return true;
 	    });
 	
@@ -287,6 +291,7 @@
 	        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7230/7228183844_fa54eeef61_b.jpg">');
 	        $("#fotorama").prepend('<img src="http://farm8.staticflickr.com/7242/7262761982_cb02cfe76d_b.jpg">');
 	        $("#fotorama").fotorama({nav:'thumbs',arrows:true,transition:'slide',autoplay:false,click:true});
+	        $(".modal").hide();
 	        return true;
 	    });    
 	    
