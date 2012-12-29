@@ -17,9 +17,9 @@ body.fullscreen {
 	}
 	
 .fullscreen .modal, 
-.fullscreen .modal-header,
-.fullscreen .modal-body,
-.fullscreen .modal-footer {visibility: visible !important}
+.fullscreen .modal-header *,
+.fullscreen .modal-body *,
+.fullscreen .modal-footer * {visibility: visible !important}
 
 .header a,
 .header a:link,
