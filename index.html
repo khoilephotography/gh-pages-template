@@ -93,7 +93,7 @@
 		
 		<div class="modal hide fade" id="AboutMe">
 			<div class="modal-header">
-				<a class="close" data-dismiss="modal">×</a>
+				<a class="close" data-dismiss="modal" style="color:white">X</a>
 				<h3>Modal header</h3>
 			</div>
 			<div class="modal-body">
@@ -164,6 +164,7 @@
 	        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6104/6367476593_686151c555_b.jpg">');
 	        $("#fotorama").prepend('<img src="http://farm7.staticflickr.com/6092/6404705075_16b610b6c4_b.jpg">');
 	        $("#fotorama").fotorama({nav:'thumbs',arrows:true,transition:'slide',autoplay:false,click:true});
+	        $(".modal").hide();
 	        return true;
 	    });
 	    
